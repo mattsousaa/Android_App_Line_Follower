@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/NomePiloto"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginEnd="17dp"
+
+
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnIniciarRobo"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="StartTime"
+        android:text="Iniciar Corrida" />
+
+    <Button
+        android:id="@+id/btnPlacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/NomePiloto"
+        android:layout_alignParentBottom="true"
+        android:onClick="Ordenar"
+        android:text="PLACAR" />
+
+    <TextView
+        android:id="@+id/lblHello"
+        android:layout_width="174dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/lstTempo"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="77dp" />
+
+    <ListView
+
+        android:id="@+id/lstPosicao"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_above="@+id/lstTempo"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="168dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Piloto"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnConexao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Conectar" />
+
+
+</RelativeLayout>

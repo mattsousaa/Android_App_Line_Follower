@@ -1,0 +1,4 @@
+#Mon Jun 18 09:39:43 GFT 2018
+base.0=C\:\\Users\\allis\\AndroidStudioProjects\\app\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\70
+path.0=classes.dex
+renamed.0=classes.dex
